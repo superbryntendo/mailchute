@@ -1,0 +1,68 @@
+{
+
+"tracking"    :
+	{
+		"term"    : "",
+		"source"  : "",
+		"medium"  : ""
+	},
+
+"countdown":{
+
+	"header"    :
+	{
+		"title"	 : 	"",
+		"copy"   : 	"",
+		"list"	 :  ""
+	},
+
+	"section1"	:{
+
+		"title": "",
+		"productName": "",
+		"productID": "",
+		"copy": "",
+		"content": "",
+		"button": ""
+	},
+
+	"section2"	:{
+
+		"title":"",
+		"productName":"",
+		"productID":"",
+		"copy":"",
+		"content":"",
+		"button":""
+	},
+
+	"section3"	:{
+
+		"title":"",
+		"productName":"",
+		"productID":"",
+		"copy":"",
+		"content":"",
+		"button":""
+		},
+
+	"section4"	:{
+
+		"title":"",
+		"productName":"",
+		"productID":"",
+		"copy":"",
+		"content":"",
+		"button":""
+		},
+
+	"section5"	:{
+
+		"title":"",
+		"productName":"",
+		"productID":"",
+		"copy":"",
+		"content":"",
+		"button":""
+	}
+}}

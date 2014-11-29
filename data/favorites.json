@@ -1,0 +1,94 @@
+{
+
+"tracking"    :
+	{
+		"term"    : "08_28_2014",
+		"source"  : "active_users",
+		"medium"  : "email"
+	},
+
+"favorites":{
+
+	"header"    :
+	{
+		"title"	 : 	"",
+		"copy"   : 	"",
+		"list"	 :  ""
+	},
+
+	"section1":{
+
+		"title": "",
+		"copy": "",
+		"1": {
+			"title":"",
+			"id":""
+			},
+		"2": {
+			"title":"",
+			"id":""
+			},
+		"3": {
+			"title":"",
+			"id":""
+			},
+		"color": ""
+	},
+
+	"section2":{
+
+		"title": "",
+		"copy": "",
+		"1": {
+			"title":"",
+			"id":""
+			},
+		"2": {
+			"title":"",
+			"id":""
+			},
+		"3": {
+			"title":"",
+			"id":""
+			},
+		"color": ""
+	},
+
+	"section3":{
+
+		"title": "",
+		"copy": "",
+		"1": {
+			"title":"",
+			"id":""
+			},
+		"2": {
+			"title":"",
+			"id":""
+			},
+		"3": {
+			"title":"",
+			"id":""
+			},
+		"color": ""
+	},
+
+	"section4":{
+
+		"title": "",
+		"copy": "",
+		"1": {
+			"title":"",
+			"id":""
+			},
+		"2": {
+			"title":"",
+			"id":""
+			},
+		"3": {
+			"title":"",
+			"id":""
+			},
+		"color": ""
+	}
+}}

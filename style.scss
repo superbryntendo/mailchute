@@ -1,0 +1,145 @@
+//variables
+$inset: 0, 40px;
+
+$gutter: 14px;
+
+$lt-col: 0, ($gutter), 0, 0;
+$md-col: 0, ($gutter/2), 0, ($gutter/2);
+$rt-col: 0, 0, 0, ($gutter);
+
+$bg-gray: #f6f6f6;
+$txt-gray: #939393;
+$title-gray: #464646;
+$white: #ffffff;
+
+$small: "only screen and (max-width: 480px)";
+
+//reset
+
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 640px;
+    font-size: 16px;
+    line-height: 1.4;
+    font-family: 'Verdana', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: $txt-gray;
+}
+
+img{
+    border: 0 none;
+    height: auto;
+    line-height: 100%;
+    outline: none;
+    text-decoration: none;
+}
+
+a img{
+    border: 0 none;
+}
+
+.imageFix{
+    display: block;
+}
+
+table, td{
+    border-collapse: collapse;
+}
+
+@mixin pad($t:null, $r:null, $b:null, $l:null){
+  padding-top: $t;
+  padding-right: $r;
+  padding-bottom: $b;
+  padding-left: $l;
+
+  @if not not index(null, $r) {
+    padding-right: $t;
+    padding-bottom: $t;
+    padding-left: $t;
+  }
+
+  @if $b == null {
+    padding-bottom: $t;
+  }
+
+  @if $l == null {
+    padding-left: $r;
+  }
+}
+
+$type-scale: (
+  h1: (2, 2, 1.05, 1.25),
+  h2: (1.5, 1.625, 1.25, 1.15384615),
+  h3: (1.25, 1.375, 1.25, 1.13636364),
+  p: (1, 1.125, 1.4, 1.275)
+);
+
+@each $heading, $size in $type-scale {
+  $desktop: nth($size, 1);
+  $mobile: nth($size, 2);
+  $dlh: nth($size, 3);
+  $mlh: nth($size, 4);
+
+  #{$heading}{
+    font-size: $desktop * 16px;
+    line-height: $dlh;
+
+    @media #{$small}{
+      font-size: $mobile * 16px !important;
+      line-height: $mlh !important;
+    }
+  }
+}
+
+#bodyTable{
+    height: 100% !important;
+    margin: 0;
+    padding: 0;
+    width: 100% !important;
+}
+
+#bodyContainer{
+  background-color: $white;
+  width: 100%;
+}
+
+// 1/3-width image cells
+
+td.wrapper--image {
+  height: 200px;
+  width: 200px;
+
+  &.column--left{
+    @include pad($lt-col...);
+  }
+  &.column--middle{
+    @include pad($md-col...);
+  }
+  &.column--right{
+    @include pad($rt-col...);
+  }
+  &:not(.row--top){
+    padding-top: $gutter;
+  }
+}
+
+#emailFooter{
+  margin-top: 48px;
+  padding-left: $gutter * 3;
+  padding-bottom: $gutter * 4;
+  padding-right: $gutter * 3;
+  color: $white;
+  background-color: $bg-gray;
+
+  h2{
+    margin-bottom: ($gutter/2);
+  }
+
+  h3{
+    margin-bottom: ($gutter * 2);
+  }
+
+	a {
+		text-decoration: none;
+	}
+}

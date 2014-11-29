@@ -1,0 +1,154 @@
+{
+
+"tracking"    :
+	{
+		"term"    : "08_28_2014",
+		"source"  : "active_users",
+		"medium"  : "email"
+	},
+
+"countdown":{
+
+	"header"    :
+	{
+		"title"	 : 	"5 Products for the King of the Campus",
+		"copy"   : 	"It's that time of the year again, but you don't have to be a student to be King of the Campus. We've put together a list of our most impressive products with HUGE savings so you can be the coolest kid on the block.",
+		"list"	 :  "http://shopsavvy.com/shopsavvy/012345678"
+	},
+
+	"section1"	:{
+
+		"title":"The Royal Scribe",
+		"productName":"Hobbit Edition Moleskine Notebooks",
+		"productID":"200000000116464",
+		"copy":"Document every thought in true Wilderland spirit with a limited edition Moleskine. With themed debossing in gold and red, these Tolkien inspired journals are perfect for the inspired writer, or even just an everyday note-taker!",
+		"content":"product1",
+		"button":" 21% Off My Precious? Oh yes!"
+	},
+
+	"section2"	:{
+
+		"title":"The Cupbearer",
+		"productName":"Krups B100 Beertender",
+		"productID":"200000002655688",
+		"copy":"For the ultimate home draught beer experience, this bad boy is the way to go. Super portable and designed with the casual beverage drinker in mind, never run out of cold beer again!",
+		"content":"product2",
+		"button":"Feeling thirsty? Drink up and save 17%"
+	},
+
+	"section3"	:{
+
+		"title":"The Court Musician",
+		"productName":"Beats by Dre Beatbox",
+		"productID":"200000002657125",
+		"copy":"Be the life of the party and bring the beat wherever you go – literally. The Beatbox speaker from the one and only Beats by Dr. Dre is sexy and perfect for big rooms (and big parties!)",
+		"content":"product3",
+		"button":"DJ, turn the music up for 10% off!"
+		},
+
+	"section4"	:{
+
+		"title":"The Royal Facebook Machine",
+		"productName":"Apple Macbook Pro 13",
+		"productID":"200000000264572",
+		"copy":"One of the absolute best laptops in the market right now for 10% off! You can do almost anything on this reliable and super powerful machine, and at only 4.5lb you can take it anywhere!",
+		"content":"product4",
+		"button":"You can be a Mac at 10% off"
+		},
+
+	"section5"	:{
+
+		"title":"But, how to oversee your Kingdom?",
+		"productName":"",
+		"productID":"200000000831304",
+		"copy":"At a whopping 87% off, this mystery product can provide hours and hours of entertainment for all ages! You've seen it on the news, and here's your chance to see what the hype is about...",
+		"content":"product5",
+		"button":"Curious? Click to see our #1"
+	}
+},
+
+"favorites":{
+
+	"header"    :
+	{
+		"title"	 : 	"",
+		"copy"   : 	"",
+		"list"	 :  ""
+	},
+
+	"section1":{
+
+		"title": "",
+		"copy": "",
+		"1": {
+			"title":"",
+			"id":""
+			},
+		"2": {
+			"title":"",
+			"id":""
+			},
+		"3": {
+			"title":"",
+			"id":""
+			},
+		"color": ""
+	},
+
+	"section2":{
+
+		"title": "",
+		"copy": "",
+		"1": {
+			"title":"",
+			"id":""
+			},
+		"2": {
+			"title":"",
+			"id":""
+			},
+		"3": {
+			"title":"",
+			"id":""
+			},
+		"color": ""
+	},
+
+	"section3":{
+
+		"title": "",
+		"copy": "",
+		"1": {
+			"title":"",
+			"id":""
+			},
+		"2": {
+			"title":"",
+			"id":""
+			},
+		"3": {
+			"title":"",
+			"id":""
+			},
+		"color": ""
+	},
+
+	"section4":{
+
+		"title": "",
+		"copy": "",
+		"1": {
+			"title":"",
+			"id":""
+			},
+		"2": {
+			"title":"",
+			"id":""
+			},
+		"3": {
+			"title":"",
+			"id":""
+			},
+		"color": ""
+	}
+}}
