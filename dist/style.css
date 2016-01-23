@@ -1,11 +1,11 @@
 body {
   margin: 0;
   padding: 0;
-  max-width: 640px;
   font-size: 16px;
   line-height: 1.4;
   font-family: 'Verdana', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  color: #939393;
+  color: #ffffff;
+  background-color: #202020;
 }
 
 img {
@@ -18,6 +18,11 @@ img {
 
 a img {
   border: 0 none;
+}
+
+.headerLogo {
+  height: 40px;
+  width: 160px;
 }
 
 .imageFix {
@@ -77,37 +82,40 @@ p {
   margin: 0;
   padding: 0;
   width: 100% !important;
+  background-color: #202020;
 }
 
 #bodyContainer {
-  background-color: white;
   width: 100%;
 }
 
-td.wrapper--image {
-  height: 200px;
-  width: 200px;
+#messageBody {
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 48px;
+  text-align: left;
 }
-td.wrapper--image.column--left {
-  padding-top: 0;
-  padding-right: 14px;
-  padding-bottom: 0;
-  padding-left: 0;
+#messageBody p {
+  color: #939393;
+  margin: 24px;
+  text-align: left;
 }
-td.wrapper--image.column--middle {
-  padding-top: 0;
-  padding-right: 7px;
-  padding-bottom: 0;
-  padding-left: 7px;
+#messageBody p.sig {
+  margin-top: 0;
+  margin-bottom: 48px;
 }
-td.wrapper--image.column--right {
-  padding-top: 0;
-  padding-right: 0;
-  padding-bottom: 0;
-  padding-left: 14px;
+
+span.legalStuff, a.legalStuff {
+  font-size: 10px;
+  color: #939393;
 }
-td.wrapper--image:not(.row--top) {
-  padding-top: 14px;
+
+span.legalStuff {
+  font-variant: italic;
+}
+
+a.legalStuff {
+  text-decoration: underline;
 }
 
 #emailFooter {
@@ -115,17 +123,14 @@ td.wrapper--image:not(.row--top) {
   padding-left: 42px;
   padding-bottom: 56px;
   padding-right: 42px;
-  color: white;
-  background-color: #f6f6f6;
+  color: #ffffff;
+  background-color: #202020;
 }
 #emailFooter h2 {
-  margin-bottom: 7px;
+  margin-bottom: 3.5px;
 }
-#emailFooter h3 {
+#emailFooter h4 {
   margin-bottom: 28px;
-}
-#emailFooter a {
-  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */

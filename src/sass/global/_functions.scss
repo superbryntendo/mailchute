@@ -1,0 +1,26 @@
+//Functions
+
+@each $heading, $size in $type-scale {
+  $desktop: nth($size,1);
+  $mobile: nth($size,2);
+  $dlh: nth($size,3);
+  $mlh: nth($size,4);
+
+  #{$heading}{
+    font-size: $desktop * 16px;
+    line-height: $dlh;
+
+    // @include gridle_state(mobile) {
+    //   font-size: $mobile * 16px;
+    //   line-height: $mlh;
+    // }
+  }
+}
+
+//Animations:
+// @keyframes nav-drop{
+//     0% {position: relative; top:-500px; opacity: 0;}
+//     50%  {top: -100px; opacity: 0.4;}
+//     75%  {top:0;}
+//     100% {position: fixed; opacity: 1;}
+// }
