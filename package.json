@@ -1,6 +1,8 @@
 {
-  "name": "mailchute",
-  "version": "0.1.0",
+  "name": "Mailchute",
+  "version": "1.0.0",
+  "license": "MIT",
+  "repository": "https://github.com/uberbryn/mailchute",
   "devDependencies": {
     "browser-sync": "*",
     "gulp": "*",
@@ -11,7 +13,6 @@
     "gulp-pug": "*",
     "gulp-ruby-sass": "*",
     "gulp-sourcemaps": "*",
-    "gulp-uglify": "*",
     "gulp-util": "^3.0.7"
   }
 }
