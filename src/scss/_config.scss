@@ -1,0 +1,39 @@
+//Border
+$border-width: 2px;
+$border-radius: 4px;
+
+//Breakpoints
+$breakpoint-sm: '(min-width: 40em)';
+$breakpoint-md: '(min-width: 52em)';
+$breakpoint-lg: '(min-width: 64em)';
+
+//Type Scale
+$h1: 1.5rem; // 32px
+$h2: 1.25rem; // 24px
+$h3: 1.125rem; // 20px
+$h4: 1rem; // 16px
+$h5: .875rem; // 14px
+$h6: .75rem; // 12px
+
+//Typography
+$line-height-1: 1;
+$line-height-2: 1.25;
+$line-height-3: 1.5;
+$line-height-4: 2;
+$letter-spacing: 1;
+
+// Default Colors
+$white: #fff;
+$black: #000;
+
+// UI Colors
+$default:   $black;
+$secondary: #56718c;
+$tertiary:  #bcd3de;
+
+// Background fills
+$bg-light:  #e1ecf2;
+$bg-dark:   #717ccf;
+
+// Brand colors
+$brand:     #7835e2;

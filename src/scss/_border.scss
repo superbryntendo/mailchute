@@ -1,0 +1,38 @@
+.b-color-default   { border-color: $default; }
+
+.b-color-secondary { border-color: $secondary; }
+
+.b-color-tertiary  { border-color: $tertiary; }
+
+.b-color-reverse   { border-color: $white; }
+
+.b-color-brand     { border-color: $brand; }
+
+.b {
+  border-style: solid;
+  border-width: $border-width;
+}
+
+.bt {
+  border-top-style: solid;
+  border-top-width: $border-width;
+}
+
+.br {
+  border-right-style: solid;
+  border-right-width: $border-width;
+}
+
+.bb {
+  border-bottom-style: solid;
+  border-bottom-width: $border-width;
+}
+
+.bl {
+  border-left-style: solid;
+  border-left-width: $border-width;
+}
+
+.b0 { border: 0 }
+
+.rounded { border-radius: $border-radius }
