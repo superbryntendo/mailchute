@@ -1,6 +1,6 @@
 // Margins and Padding are measured in half-REM (8px) increments
 @for $i from 1 through 8 {
-   .p#{$i} { padding: #{$i * .5}rem; }
+  .p#{$i} { padding: #{$i * .5}rem; }
   .pt#{$i} { padding-top: #{$i * .5}rem; }
   .pb#{$i} { padding-bottom: #{$i * .5}rem; }
   .pl#{$i} { padding-left: #{$i * .5}rem; }
