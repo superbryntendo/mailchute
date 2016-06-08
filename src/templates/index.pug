@@ -1,48 +1,34 @@
 extends ./partials/mailchute.pug
 block content
-  table#bodyTable(border='0', cellpadding='0', cellspacing='0', height='100%', width='100%')
-    tr
-      td(align='center', valign='top', style='padding-top: 32px; padding-bottom: 24px;')
-        a(href='http://sidewire.com')
-          img.headerLogo.imageFix(src='https://s3.amazonaws.com/sidewire-emails/transactional/email-header.png')
-    tr
-      td#avatarContainer(align='center', valign='top')
-        img.ticket.imageFix(src='https://s3.amazonaws.com/sidewire-emails/transactional/ticket-host.png')
-    tr
-      td#contentArea(align='left', valign='top')
-        h1 {{SENDER NAME} wants to host a chat with you about
-          a(href='chat?') "{SUBJECT|TITLE}."
-        p To co-host the chat, just click the button below! Once you post in the conversation, we'll display that you're co-hosting it.
-    tr
-      td(align='center' valign='top')
-        a.buttonCTA(href="ssv") Join the chat!
+  +insert-table()
+    a(href='http://github.com/uberbryn/mailchute')
+      img.x40(src='img/mailchute.png')
+  +insert-table('left-align', 'pt2', 'px4')
+    h1.h1.mt2.font-default.color-brand.left-align Mailchute
+    p.h4.mt1.font-default.color-secondary.left-align.line-height-3 Mailchute is a combination of popular front-end development tools with a few tweaks to help designers build HTML emails quickly.
+  +insert-table('font-default', 'left-align')
+    p.left-align It uses:
+    ul.left-align
+      li.pb2
+        a.bold.color-brand.text-decoration-none(href='https://github.com/gulpjs/gulp') Gulp
+        span  to stream changes to data, templates, and stylesheets
+      li.pb2
+        a.bold.color-brand.text-decoration-none(href='https://github.com/pugjs/pug') Pug
+        span  to make building templates and reusable components easy
+      li.pb2
+        a.bold.color-brand.text-decoration-none(href='https://github.com/sass/sass') SCSS
+        span  to style it all up (including a few bits and pieces from
+          a.bold.color-brand.text-decoration-none(href='https://github.com/basscss/basscss')  BassCSS
+          span )
+      li.pb2
+        a.bold.color-brand.text-decoration-none(href='https://github.com/BrowserSync/browser-sync') BrowserSync
+        span  to preview how your email will look
+      li.pb2
+        a.bold.color-brand.text-decoration-none(href='https://github.com/premailer/premailer') Premailer
+        span  to inline your styles when you're ready to send it.
 
+block footer
+  table.fill-x(cellpadding='0', cellspacing='0')
     tr
-      td#emailFooter(align='center' valign='middle')
-        table(border='0' cellpadding='0' cellspacing='0' width='100%')
-          tr
-            td(align='center' valign='top')
-              table(border='0' cellpadding='0' cellspacing='0' width='100%')
-                tr
-                  td.downloadLeft(align='right' valign='top')
-                    a(href='https://itunes.apple.com/us/app/sidewire/id1023491591?ls=1&mt=8')
-                      img(src='https://s3.amazonaws.com/sidewire-emails/transactional/app-store-button.png')
-                  td.downloadMiddle(align='center' valign='top')
-                    a(href='https://play.google.com/store/apps/details?id=com.sidewire')
-                      img(src='https://s3.amazonaws.com/sidewire-emails/transactional/google-store-button.png')
-                  td.downloadRight(align='left' valign='top')
-                    a(href='http://www.amazon.com/gp/mas/dl/android?p=com.sidewire')
-                      img(src='https://s3.amazonaws.com/sidewire-emails/transactional/amazon-store-button.png')
-          tr
-            td(align='center' valign='top')
-              table(border='0' cellpadding='0' cellspacing='0' width='100%')
-                tr
-                  td(align='center' valign='top')
-                    img.footerLogo.imageFix(src='https://s3.amazonaws.com/sidewire-emails/transactional/footer-logo.png')
-          tr
-            td(align='center' valign='top')
-              table(border='0' cellpadding='0' cellspacing='0' width='100%')
-                tr
-                  td.footerLegal(align='center' valign='top')
-                    a(href="http://sidewire.com") &copy; 2016 Sidewire, Inc.&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-                    a(href="newsmakerprofile") Unsubscribe
+      td.bg-color-brand.color-reverse.y8.font-default(align='center', valign='top')
+        p Thanks for using Mailchute

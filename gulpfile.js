@@ -6,6 +6,7 @@ data 						= require('gulp-data'),
 sass						= require('gulp-ruby-sass'),
 prefix 					= require('gulp-autoprefixer'),
 maps						= require('gulp-sourcemaps'),
+imagemin        = require('gulp-imagemin'),
 gutil 					= require('gulp-util'),
 premailer 			= require('gulp-premailer');
 
@@ -21,6 +22,13 @@ var paths = {
 		pug: 			'./src/templates/*.pug',
 		markup: 	'./src/compiled/*.html'
 	},
+
+  // Images
+  images: {
+    input: './src/img/*',
+    preview: './src/compiled/img',
+    output: './dist/img',
+  },
 
 	// Data
 	data: './src/json/data.json',
@@ -52,7 +60,7 @@ function onError(error) { handleError.call(this, 'error', error);}
 function onWarning(error) { handleError.call(this, 'warning', error);}
 
 
-gulp.task('default', ['browser-sync', 'watch']);
+gulp.task('default', ['images', 'browser-sync', 'watch']);
 
 // Watch task
 gulp.task('watch', function() {
@@ -93,5 +101,14 @@ gulp.task('styles', function () {
   .pipe(prefix("last 2 versions"))
   .pipe(gulp.dest(paths.preview))
   .pipe(browserSync.reload({ stream:true }))
+  .on('error', onWarning);
+});
+
+// Optimize images
+gulp.task('images', function() {
+  return gulp.src(paths.images.input)
+  .pipe(imagemin())
+  .pipe(gulp.dest(paths.images.preview))
+  .pipe(gulp.dest(paths.images.output))
   .on('error', onWarning);
 });

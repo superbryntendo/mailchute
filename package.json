@@ -6,6 +6,7 @@
     "gulp": "*",
     "gulp-autoprefixer": "*",
     "gulp-data": "*",
+    "gulp-imagemin": "^3.0.1",
     "gulp-premailer": "*",
     "gulp-pug": "*",
     "gulp-ruby-sass": "*",

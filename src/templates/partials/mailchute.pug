@@ -1,8 +1,22 @@
+- var data = data
+
+include mixins.pug
+
 doctype html
 html(xmlns='http://www.w3.org/1999/xhtml')
-	head
-		meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
-		link(rel='stylesheet', type='text/css', href='mailchute.css')
-		block head
-	body
-		block content
+  head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    link(rel='stylesheet', type='text/css', href='mailchute.css')
+    block head
+  body
+    table(border='0', cellpadding='0', cellspacing='0', height='100%', width='100%')
+      tr
+        td.bg-color-light(align='center', valign='top')
+          table(cellpadding='0', cellspacing='0', class=classes)
+            tr
+              td.b0.x40.bg-color-default(align='center', valign='top')
+                block content
+            tr
+              td.fill-x(align='center', valign='top')
+                block footer
+                  p something something

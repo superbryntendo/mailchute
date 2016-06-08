@@ -5,7 +5,7 @@ mailchute
 
 Mailchute is a combination of popular front-end development tools with a few tweaks to help designers build HTML emails quickly.
 
-It uses:
+It's built using:
 
 - [Gulp](https://github.com/gulpjs/gulp) to stream changes to data, templates, and stylesheets
 - JSON objects to store content and copy
