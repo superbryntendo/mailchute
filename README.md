@@ -19,6 +19,8 @@ Mailchute is a combination of popular front-end development tools with a few twe
 
 Clone repo locally.
 
+Run ```gem install premailer```.
+
 Make sure you have at least Node v6.0.0, then run ```npm install``` from the ```mailchute``` directory.
 
 When finished installing dependencies, run ```gulp```. This should launch your main browser and start BrowserSync, displaying the example file at ```localhost:3000```.
