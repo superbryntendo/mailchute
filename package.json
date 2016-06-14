@@ -4,15 +4,15 @@
   "license": "MIT",
   "repository": "https://github.com/uberbryn/mailchute",
   "devDependencies": {
-    "browser-sync": "*",
-    "gulp": "*",
-    "gulp-autoprefixer": "*",
-    "gulp-data": "*",
+    "browser-sync": "^2.13.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-data": "^1.2.1",
     "gulp-imagemin": "^3.0.1",
-    "gulp-premailer": "*",
-    "gulp-pug": "*",
-    "gulp-ruby-sass": "*",
-    "gulp-sourcemaps": "*",
+    "gulp-premailer": "^0.4.0",
+    "gulp-pug": "^3.0.3",
+    "gulp-ruby-sass": "^2.0.6",
+    "gulp-sourcemaps": "^1.6.0",
     "gulp-util": "^3.0.7"
   }
 }

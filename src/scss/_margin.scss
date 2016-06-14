@@ -8,14 +8,14 @@
 
 // Margins and Padding are measured in half-REM (8px) increments
 @for $i from 0 through 8 {
-	  .m#{$i} { margin: #{$i * .5}rem; }
-	 .mt#{$i} { margin-top: #{$i * .5}rem; }
-	 .mr#{$i} { margin-right: #{$i * .5}rem; }
-	 .mb#{$i} { margin-bottom: #{$i * .5}rem; }
-	 .ml#{$i} { margin-left: #{$i * .5}rem; }
-	 .my#{$i} { margin-top: #{$i * .5}rem; margin-bottom: #{$i * .5}rem; }
-	 .mx#{$i} { margin-left: #{$i * .5}rem; margin-right: #{$i * .5}rem; }
-	.mnt#{$i} { margin-top: #{$i * .5}rem; }
-	.mnb#{$i} { margin-bottom: #{$i * -.5}rem; }
-	.mnx#{$i} { margin-right: #{$i * -.5}rem; margin-left: #{$i * -.5}rem; }
+  .m#{$i} { margin: #{$i * .5}rem; }
+    .mt#{$i} { margin-top: #{$i * .5}rem; }
+    .mr#{$i} { margin-right: #{$i * .5}rem; }
+    .mb#{$i} { margin-bottom: #{$i * .5}rem; }
+    .ml#{$i} { margin-left: #{$i * .5}rem; }
+    .my#{$i} { margin-top: #{$i * .5}rem; margin-bottom: #{$i * .5}rem; }
+    .mx#{$i} { margin-left: #{$i * .5}rem; margin-right: #{$i * .5}rem; }
+  .mnt#{$i} { margin-top: #{$i * .5}rem; }
+  .mnb#{$i} { margin-bottom: #{$i * -.5}rem; }
+  .mnx#{$i} { margin-right: #{$i * -.5}rem; margin-left: #{$i * -.5}rem; }
 }
