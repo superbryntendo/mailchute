@@ -19,7 +19,7 @@ Mailchute is a combination of popular front-end development tools with a few twe
 
 Clone repo locally.
 
-Run ```gem install premailer```.
+Run ```gem install premailer && gem install nokogiri``` (you may need to use `sudo`).
 
 Make sure you have at least Node v6.0.0, then run ```npm install``` from the ```mailchute``` directory.
 
